@@ -1,0 +1,41 @@
+---
+import search from "../assets/search.svg";
+import burger from "../assets/burger.svg";
+import logo from "../assets/logo.svg";
+---
+
+<header>
+  <nav class="navbar">
+    <div>
+      <a href=""><img src={search.src} alt="" /> </a>
+    </div>
+    <div>
+      <a href=""><img src={logo.src} alt="" /></a>
+    </div>
+    <div>
+      <a href=""><img src={burger.src} alt="" /></a>
+    </div>
+  </nav>
+
+  <style>
+    header {
+      height: 64px;
+      width: 100vw;
+      border-bottom: 1px solid #ababaa;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar:first-child {
+      margin-left: 10vw;
+    }
+
+    .navbar:last-child {
+      margin-right: 10vw;
+    }
+  </style>
+</header>
