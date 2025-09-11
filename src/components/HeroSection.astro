@@ -1,0 +1,141 @@
+---
+import placeholderBig from "../assets/black_large.png";
+import placeholderSmall from "../assets/black_small.png";
+---
+
+<!-- Overordnet container -->
+<div class="mainContainer">
+  <!-- Container til featured articles -->
+  <div class="articleContainer">
+    <div class="featuredArticle">
+      <a href="">
+        <img class="featuredPic" src={placeholderSmall.src} alt="" />
+        <p class="category">Local.CRTV</p>
+        <h2>Meet Bertram</h2>
+      </a>
+    </div>
+    <div class="featuredArticle">
+      <a href="">
+        <img class="featuredPic" src={placeholderSmall.src} alt="" />
+        <p class="category">Local.CRTV</p>
+        <h2>Meet Emma</h2>
+      </a>
+    </div>
+  </div>
+  <!-- Container til mmain article -->
+  <div class="mainArticle">
+    <a href="">
+      <img src={placeholderBig.src} alt="" class="mainPic" />
+      <p class="categoryMain">This Week</p>
+      <h1>Escape to Berlin</h1>
+    </a>
+  </div>
+</div>
+
+<style>
+  @font-face {
+    font-family: Anton;
+    src: url("../../public/fonts/Anton-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: Geo;
+    src: url(../../public/fonts/Geo-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Inter;
+    src: url(../../public/fonts/Inter_18pt-SemiBold.ttf);
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Anton;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .category {
+    color: #000;
+    font-family: Geo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-transform: capitalize;
+  }
+
+  .categoryMain {
+    color: #000;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Geo;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-transform: capitalize;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .mainContainer {
+    display: flex;
+    margin: 3vw 10vw;
+    justify-content: space-between;
+  }
+
+  /* Featured news card */
+  .featuredArticle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .featuredPic {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+
+  /* Hero news card */
+  .mainPic {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+  }
+
+  .mainArticle {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+</style>
