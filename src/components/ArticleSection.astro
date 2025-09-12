@@ -1,9 +1,75 @@
 ---
-
+import placeholderSquare from "../assets/black_square_l.png";
 ---
 
-<div class="sectionText">
-  <h2>CRTV JAM — Your Weekly Creative Escape</h2>
+<div class="mainContainer">
+  <div class="textDiv">
+    <h2>CRTV JAM — Your Weekly Creative Escape</h2>
+    <p class="sectionText">
+      CRTV Jam is our ongoing creative escape. Every week we touch down in a new
+      city — this week: Berlin. The walls, the streets, the hidden corners and
+      loud voices become our inspiration, transformed into prompts that spark
+      new ideas.
+    </p>
+    <p class="sectionText">
+      Three times a week — Monday, Wednesday, Friday — we drop a fresh prompt
+      connected to the place we're in. That word or phrase is your invitation to
+      create. What you make is entirely up to you: a quick sketch, a photo roll,
+      a stitched pattern, a home-cooked dish, a digital remix, a mural, a
+      melody. There are no limits, only openings.
+    </p>
+    <p class="sectionText">
+      When you're ready, share it with us. If you want the spotlight, we'll tag
+      you and put your name out there. If you'd rather stay behind the curtain,
+      we'll post it anonymously. This way you can explore freely, whether you're
+      an upcoming artist searching for exposure or someone testing the waters of
+      your own creativity.
+    </p>
+    <p class="sectionText">
+      Every Sunday we gather the week's creations and showcase them side by
+      side. The result is a collective canvas: a snapshot of how one city can be
+      reimagined in a hundred different ways. CRTV Jam isn't about perfection.
+      It's about process, play, and finding new ways to escape through making.
+      Join us, and turn the next prompt into your own creative jam.
+    </p>
+    <p class="sectionText"></p>
+  </div>
+  <div class="pictureContainer">
+    <img src={placeholderSquare.src} alt="" class="squarePic" />
+    <img src={placeholderSquare.src} alt="" class="squarePic" />
+  </div>
+  <div class="textDiv">
+    <h2>Berlin Free Gem — RAW Energy on Revaler Straße</h2>
+    <p class="sectionText">
+      East Berlin hides a place where the city's raw spirit lives in full color.
+      Just off Revaler Straße, the former train repair yard known as RAW Gelände
+      has transformed into one of the city's most eclectic cultural spots. What
+      looks like an abandoned industrial site is now a maze of graffiti-covered
+      walls, hidden corners, and open-air art. Every surface is painted, tagged,
+      layered, and repainted — a free gallery that shifts with the city itself.
+    </p>
+    <p class="sectionText">
+      In the middle of it all stands Urban Spree, part gallery, part music
+      venue, part garden hangout. Here you'll find exhibitions, murals, and
+      installations that change regularly — some free to explore, others
+      spilling outside for everyone to see. Around the area, you'll stumble upon
+      bars, cafés, food stalls, and even a skate hall. Cassiopeia offers
+      concerts and club nights, while tucked in between it all you might spot
+      one of Berlin's quirkiest attractions: a tiny disco hidden inside an old
+      phone booth.
+    </p>
+    <p class="sectionText">
+      What makes this a true Free Gem is the art you don't have to pay for. The
+      walls themselves are alive, constantly rewritten by Berlin's graffiti and
+      street art community. Walking through RAW feels like stepping inside a
+      living canvas — chaotic, unfinished, always changing. Whether you're there
+      for the galleries, a beer in the sun, or just to wander, the area is proof
+      of how Berlin keeps creating in public.
+    </p>
+  </div>
+  <div class="pictureContainer2">
+    <img src={placeholderSquare.src} alt="" class="squarePic" />
+  </div>
 </div>
 
 <style>
@@ -14,7 +80,7 @@
 
   @font-face {
     font-family: Inter;
-    src: url(../../public/fonts/Inter_18pt-SemiBold.ttf);
+    src: url(../../public/fonts/Inter_18pt-Regular.ttf);
   }
 
   h2 {
@@ -25,5 +91,38 @@
     font-weight: 400;
     line-height: 40px;
     text-transform: uppercase;
+  }
+
+  .textDiv {
+    display: flex;
+    margin: 0 20vw;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .sectionText {
+    color: #333;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; /* 170% */
+  }
+
+  .squarePic {
+  }
+
+  .pictureContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10vw;
+    margin-bottom: 3vw;
+  }
+  .pictureContainer2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vw;
   }
 </style>
