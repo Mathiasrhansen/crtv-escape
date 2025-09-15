@@ -1,36 +1,39 @@
 ---
-import placeholderBig from "../assets/black_large.png";
-import placeholderSmall from "../assets/black_small.png";
+import heroPic from "../assets/hero.webp";
+import emma from "../assets/emma.webp";
+import bertram from "../assets/bertram.webp";
 ---
 
-<!-- Overordnet container -->
-<div class="mainContainer">
-  <!-- Container til featured articles -->
-  <div class="articleContainer">
-    <div class="featuredArticle">
-      <a href="">
-        <img class="featuredPic" src={placeholderSmall.src} alt="" />
-        <p class="category">Local.CRTV</p>
-        <h2>Meet Bertram</h2>
-      </a>
+<body>
+  <!-- Overordnet container -->
+  <div class="mainContainer">
+    <!-- Container til featured articles -->
+    <div class="articleContainer">
+      <div class="featuredArticle">
+        <a href="">
+          <img class="featuredPic" src={bertram.src} alt="" />
+          <p class="category">Local.CRTV</p>
+          <h2>Meet Bertram</h2>
+        </a>
+      </div>
+      <div class="featuredArticle">
+        <a href="">
+          <img class="featuredPic" src={emma.src} alt="" />
+          <p class="category">Local.CRTV</p>
+          <h2>Meet Emma</h2>
+        </a>
+      </div>
     </div>
-    <div class="featuredArticle">
-      <a href="">
-        <img class="featuredPic" src={placeholderSmall.src} alt="" />
-        <p class="category">Local.CRTV</p>
-        <h2>Meet Emma</h2>
+    <!-- Container til mmain article -->
+    <div class="mainArticle">
+      <a href="article">
+        <img src={heroPic.src} alt="" class="mainPic" />
+        <p class="categoryMain">This Week</p>
+        <h1>Escape to Berlin</h1>
       </a>
     </div>
   </div>
-  <!-- Container til mmain article -->
-  <div class="mainArticle">
-    <a href="./pages/article.html">
-      <img src={placeholderBig.src} alt="" class="mainPic" />
-      <p class="categoryMain">This Week</p>
-      <h1>Escape to Berlin</h1>
-    </a>
-  </div>
-</div>
+</body>
 
 <style>
   @font-face {
@@ -48,6 +51,10 @@ import placeholderSmall from "../assets/black_small.png";
     src: url(../../public/fonts/Inter_18pt-SemiBold.ttf);
   }
 
+  /* body {
+    background: linear-gradient(180deg, #fff 0%, #e6e6e6 82.69%);
+  } */
+
   h1 {
     color: #333;
     text-align: center;
@@ -58,6 +65,7 @@ import placeholderSmall from "../assets/black_small.png";
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    margin: 0;
   }
 
   h2 {
@@ -83,6 +91,7 @@ import placeholderSmall from "../assets/black_small.png";
     text-underline-offset: auto;
     text-underline-position: from-font;
     text-transform: capitalize;
+    margin: 0;
   }
 
   .categoryMain {
@@ -100,6 +109,7 @@ import placeholderSmall from "../assets/black_small.png";
     text-underline-offset: auto;
     text-underline-position: from-font;
     text-transform: capitalize;
+    margin: 0;
   }
 
   a {

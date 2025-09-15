@@ -1,5 +1,8 @@
 ---
-import placeholder from "../assets/featuredPlaceholder.png";
+import pic1 from "../assets/featured_berlin1.webp";
+import pic2 from "../assets/featured_berlin2.webp";
+import pic3 from "../assets/featured_berlin3.webp";
+import pic4 from "../assets/featured_berlin4.webp";
 ---
 
 <!-- Overordnet container -->
@@ -21,28 +24,28 @@ import placeholder from "../assets/featuredPlaceholder.png";
   <div class="cardContainer">
     <div class="card">
       <a href="">
-        <img src={placeholder.src} alt="" class="cardPic" />
+        <img src={pic1.src} alt="" class="cardPic" />
         <p class="cardCategory">Free Gem</p>
         <h2>Street art walk in Berlin</h2>
       </a>
     </div>
     <div class="card">
       <a href="">
-        <img src={placeholder.src} alt="" class="cardPic" />
+        <img src={pic2.src} alt="" class="cardPic" />
         <p class="cardCategory">Free Gem</p>
         <h2>Street art walk in Berlin</h2>
       </a>
     </div>
     <div class="card">
       <a href="">
-        <img src={placeholder.src} alt="" class="cardPic" />
+        <img src={pic3.src} alt="" class="cardPic" />
         <p class="cardCategory">Free Gem</p>
         <h2>Street art walk in Berlin</h2>
       </a>
     </div>
     <div class="card">
       <a href="">
-        <img src={placeholder.src} alt="" class="cardPic" />
+        <img src={pic4.src} alt="" class="cardPic" />
         <p class="cardCategory">Free Gem</p>
         <h2>Street art walk in Berlin</h2>
       </a>
@@ -111,6 +114,9 @@ import placeholder from "../assets/featuredPlaceholder.png";
   }
 
   .cardPic {
+    max-height: 330px;
+    height: 100%;
+    width: auto;
   }
 
   .cardCategory {

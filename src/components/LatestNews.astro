@@ -1,6 +1,11 @@
 ---
-import placeholderBig from "../assets/black_large.png";
 import placeholderSquare from "../assets/black_square.png";
+import hero from "../assets/hero.webp";
+import latestNews1 from "../assets/latest_news1.png";
+import latestNews2 from "../assets/latest_news2.png";
+import latestNews3 from "../assets/latest_news3.png";
+import latestNews4 from "../assets/latest_news4.png";
+import test from "../assets/latest_v2.webp";
 ---
 
 <!-- Overordnet container -->
@@ -8,7 +13,7 @@ import placeholderSquare from "../assets/black_square.png";
   <!-- Main article -->
   <div class="mainArticle">
     <a href="">
-      <img src={placeholderBig.src} alt="" class="mainPic" />
+      <img src={hero.src} alt="" class="mainPic" />
       <p class="categoryMain">This Week</p>
       <h1>Street Art in Berlin</h1>
     </a>
@@ -30,28 +35,28 @@ import placeholderSquare from "../assets/black_square.png";
     </div>
     <!-- Inddeling af hver artikel på cards -->
     <div class="newsCard" id="first">
-      <img src={placeholderSquare.src} alt="" />
+      <img src={latestNews1.src} alt="" />
       <div class="cardText">
         <p class="cardTitle">Bla bla! Uge 33</p>
         <p class="cardDate">30/9-2025</p>
       </div>
     </div>
     <div class="newsCard">
-      <img src={placeholderSquare.src} alt="" />
+      <img src={latestNews2.src} alt="" />
       <div class="cardText">
         <p class="cardTitle">Bla bla! Uge 33</p>
         <p class="cardDate">30/9-2025</p>
       </div>
     </div>
     <div class="newsCard">
-      <img src={placeholderSquare.src} alt="" />
+      <img src={latestNews3.src} alt="" />
       <div class="cardText">
         <p class="cardTitle">Bla bla! Uge 33</p>
         <p class="cardDate">30/9-2025</p>
       </div>
     </div>
     <div class="newsCard">
-      <img src={placeholderSquare.src} alt="" />
+      <img src={latestNews4.src} alt="" />
       <div class="cardText">
         <p class="cardTitle">Bla bla! Uge 33</p>
         <p class="cardDate">30/9-2025</p>
@@ -113,6 +118,7 @@ import placeholderSquare from "../assets/black_square.png";
     text-underline-offset: auto;
     text-underline-position: from-font;
     text-transform: capitalize;
+    margin: 0;
   }
 
   h1 {
@@ -125,6 +131,7 @@ import placeholderSquare from "../assets/black_square.png";
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    margin-top: 0;
   }
 
   /* Latest news */
