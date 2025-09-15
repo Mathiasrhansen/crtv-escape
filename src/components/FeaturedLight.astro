@@ -1,6 +1,6 @@
 ---
-import placeholder from "../assets/featuredPlaceholder.png";
 import byhaven from "../assets/byhaven.webp";
+import FeatureCard from "./FeatureCardLight.astro";
 ---
 
 <!-- Overordnet container -->
@@ -20,34 +20,26 @@ import byhaven from "../assets/byhaven.webp";
     <h1>Unmissable things to see in Copenhagen</h1>
   </div>
   <div class="cardContainer">
-    <div class="card">
-      <a href="">
-        <img src={byhaven.src} alt="" class="cardPic" />
-        <p class="cardCategory">Free Gem</p>
-        <h2>Byhaven</h2>
-      </a>
-    </div>
-    <div class="card">
-      <a href="">
-        <img src={byhaven.src} alt="" class="cardPic" />
-        <p class="cardCategory">Free Gem</p>
-        <h2>Byhaven</h2>
-      </a>
-    </div>
-    <div class="card">
-      <a href="">
-        <img src={byhaven.src} alt="" class="cardPic" />
-        <p class="cardCategory">Free Gem</p>
-        <h2>Byhaven</h2>
-      </a>
-    </div>
-    <div class="card">
-      <a href="">
-        <img src={byhaven.src} alt="" class="cardPic" />
-        <p class="cardCategory">Free Gem</p>
-        <h2>Byhaven</h2>
-      </a>
-    </div>
+    <FeatureCard
+      cardPic={byhaven.src}
+      cardCategory="Free Gem"
+      cardName="Byhaven"
+    />
+    <FeatureCard
+      cardPic={byhaven.src}
+      cardCategory="Free Gem"
+      cardName="Byhaven"
+    />
+    <FeatureCard
+      cardPic={byhaven.src}
+      cardCategory="Free Gem"
+      cardName="Byhaven"
+    />
+    <FeatureCard
+      cardPic={byhaven.src}
+      cardCategory="Free Gem"
+      cardName="Byhaven"
+    />
   </div>
 </div>
 
