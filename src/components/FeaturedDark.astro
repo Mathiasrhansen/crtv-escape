@@ -3,6 +3,7 @@ import pic1 from "../assets/featured_berlin1.webp";
 import pic2 from "../assets/featured_berlin2.webp";
 import pic3 from "../assets/featured_berlin3.webp";
 import pic4 from "../assets/featured_berlin4.webp";
+import FeatureCard from "./FeatureCard.astro";
 ---
 
 <!-- Overordnet container -->
@@ -22,34 +23,26 @@ import pic4 from "../assets/featured_berlin4.webp";
     <h1>Unmissable things to see in Berlin</h1>
   </div>
   <div class="cardContainer">
-    <div class="card">
-      <a href="">
-        <img src={pic1.src} alt="" class="cardPic" />
-        <p class="cardCategory">Free Gem</p>
-        <h2>Street art walk in Berlin</h2>
-      </a>
-    </div>
-    <div class="card">
-      <a href="">
-        <img src={pic2.src} alt="" class="cardPic" />
-        <p class="cardCategory">Free Gem</p>
-        <h2>Street art walk in Berlin</h2>
-      </a>
-    </div>
-    <div class="card">
-      <a href="">
-        <img src={pic3.src} alt="" class="cardPic" />
-        <p class="cardCategory">Free Gem</p>
-        <h2>Street art walk in Berlin</h2>
-      </a>
-    </div>
-    <div class="card">
-      <a href="">
-        <img src={pic4.src} alt="" class="cardPic" />
-        <p class="cardCategory">Free Gem</p>
-        <h2>Street art walk in Berlin</h2>
-      </a>
-    </div>
+    <FeatureCard
+      cardPic={pic1.src}
+      cardCategory="Free Gem"
+      cardName="Street art walk in Berlin"
+    />
+    <FeatureCard
+      cardPic={pic2.src}
+      cardCategory="Free Gem"
+      cardName="Street art walk in Berlin"
+    />
+    <FeatureCard
+      cardPic={pic3.src}
+      cardCategory="Free Gem"
+      cardName="Street art walk in Berlin"
+    />
+    <FeatureCard
+      cardPic={pic4.src}
+      cardCategory="Free Gem"
+      cardName="Street art walk in Berlin"
+    />
   </div>
 </div>
 
