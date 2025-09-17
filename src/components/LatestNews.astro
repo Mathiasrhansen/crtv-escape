@@ -26,8 +26,9 @@ import test from "../assets/latest_v2.webp";
         xmlns="http://www.w3.org/2000/svg"
         width="440"
         height="2"
-        viewBox="0 0 442 2"
+        viewBox="0 0 440 2"
         fill="none"
+        class="line"
       >
         <path d="M0.193359 1H441.193" stroke="#ABABAB"></path>
       </svg>
@@ -194,5 +195,15 @@ import test from "../assets/latest_v2.webp";
     flex-direction: column;
     justify-content: space-between;
     padding-left: 1vw;
+  }
+
+  @media screen and (max-width: 601px) {
+    .mainContainer {
+      flex-direction: column;
+    }
+
+    .line {
+      width: 80vw;
+    }
   }
 </style>

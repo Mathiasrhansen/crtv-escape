@@ -51,10 +51,6 @@ import bertram from "../assets/bertram.webp";
     src: url(../../public/fonts/Inter_18pt-SemiBold.ttf);
   }
 
-  /* body {
-    background: linear-gradient(180deg, #fff 0%, #e6e6e6 82.69%);
-  } */
-
   h1 {
     color: #333;
     text-align: center;
@@ -147,5 +143,19 @@ import bertram from "../assets/bertram.webp";
     display: flex;
     align-items: center;
     text-align: center;
+  }
+
+  @media screen and (max-width: 601px) {
+    .mainContainer {
+      flex-direction: column;
+    }
+
+    /* .mainArticle {
+      order: 1;
+    } */
+
+    .articleContainer {
+      order: 2;
+    }
   }
 </style>
